@@ -610,6 +610,7 @@ button:hover {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
+     flex-wrap: wrap;
   }
 
   .nav-links {
@@ -672,6 +673,7 @@ button:hover {
     justify-content: flex-end;
   }
 
+  
   .search-box {
     display: none; /* optional: hide search on mobile */
   }

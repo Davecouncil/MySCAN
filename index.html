@@ -19,7 +19,11 @@
       <img src="image/Screenshot (525).png" alt="">
     </div>
 
-    <ul class="nav-links">
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul class="nav-links mobile-menu">
       <li>Home</li>
       <li>Browse</li>
       <li>Genres</li>
@@ -292,7 +296,8 @@
       </div>
 
       <div class="store-card">
-        <img src="https://cdn.asurascans.com/asura-images/covers/revenge-of-the-iron-blooded-sword-hound.41b6fb-400.webp">
+        <img
+          src="https://cdn.asurascans.com/asura-images/covers/revenge-of-the-iron-blooded-sword-hound.41b6fb-400.webp">
         <h3>Revenge Of The Iron Blooded Sword Hound</h3>
         <p>Betrayed and reborn, he sharpens his blade for revenge.</p>
         <div class="store-action">
@@ -370,6 +375,15 @@
     </div>
 
   </footer>
+
+  <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".mobile-menu"); 
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 
 </body>
 
